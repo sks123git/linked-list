@@ -72,6 +72,25 @@ public class MyLinkedlist {
             temp=temp.getNext();
         }
     }
+
+    public  void deleteInBetween(INode key){
+        INode temp = head,prev=null;
+        if(temp!=null && temp.getKey()==key){
+            head=temp.getNext();
+            return;
+        }
+        while (temp!=null && temp.getKey()!=null){
+            prev=temp;
+            temp=temp.getNext();
+        }
+
+        if (temp==null){
+            return;
+        }
+
+        prev.setNext(temp.getNext());
+
+    }
     public void display(){
         INode temp = head;
         if (temp==null){
