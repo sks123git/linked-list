@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MyLinkedlist {
     INode head = null;
     INode tail = null;
@@ -44,6 +46,18 @@ public class MyLinkedlist {
         while (temp.getNext().getNext()!=null){
             this.tail=temp.getNext();
             this.tail.setNext(null);
+            temp=temp.getNext();
+        }
+    }
+    public void search(INode key){
+        INode temp=head;
+        int i=0;
+        while (temp.getNext()!=null){
+            if(key.getKey()==temp.getKey()){
+                System.out.println("key found at index "+(i+1));
+                return;
+            }i++;
+            temp=temp.getNext();
         }
     }
     public void display(){

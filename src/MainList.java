@@ -9,7 +9,7 @@ public class MainList {
         myLinkedlist.append(secondValue);
         myLinkedlist.append(thirdValue);
         myLinkedlist.display();
-        myLinkedlist.popLast();
-        myLinkedlist.display();
+        NodeList searchValue = new NodeList(30);
+        myLinkedlist.search(searchValue);
     }
 }
