@@ -60,6 +60,18 @@ public class MyLinkedlist {
             temp=temp.getNext();
         }
     }
+
+    public void insertElementInBetween(INode newNode, INode prevNode){
+        INode temp = head;
+        while (temp!=null){
+            if(temp.getKey()==prevNode.getKey()){
+                newNode.setNext(temp.getNext());
+                temp.setNext(newNode);
+                return;
+            }
+            temp=temp.getNext();
+        }
+    }
     public void display(){
         INode temp = head;
         if (temp==null){

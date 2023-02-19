@@ -9,7 +9,8 @@ public class MainList {
         myLinkedlist.append(secondValue);
         myLinkedlist.append(thirdValue);
         myLinkedlist.display();
-        NodeList searchValue = new NodeList(30);
-        myLinkedlist.search(searchValue);
+        NodeList insertValue = new NodeList(20);
+        myLinkedlist.insertElementInBetween(insertValue,firstValue);
+        myLinkedlist.display();
     }
 }
