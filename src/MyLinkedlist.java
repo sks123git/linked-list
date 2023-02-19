@@ -79,7 +79,7 @@ public class MyLinkedlist {
             head=temp.getNext();
             return;
         }
-        while (temp!=null && temp.getKey()!=null){
+        while (temp!=null && temp.getKey()!=key){
             prev=temp;
             temp=temp.getNext();
         }
