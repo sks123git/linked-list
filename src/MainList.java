@@ -9,8 +9,7 @@ public class MainList {
         myLinkedlist.append(secondValue);
         myLinkedlist.append(thirdValue);
         myLinkedlist.display();
-        myLinkedlist.pop();
-        myLinkedlist.pop();
+        myLinkedlist.popLast();
         myLinkedlist.display();
     }
 }
