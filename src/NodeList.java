@@ -1,4 +1,4 @@
-public class NodeList<K> implements INode<K>{
+public class NodeList<K extends Comparable<K>> implements INode<K>{
 
     private K key;
     private INode<K> next;
